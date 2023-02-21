@@ -8,6 +8,7 @@ node {
     }
 
     stage('Build image') {
+        sh 'cp /var/lib/jenkins/workspace/api.js /var/lib/jenkins/workspace/nodejs/'
   
        app = docker.build("manishaverma/javaimg")
     }
