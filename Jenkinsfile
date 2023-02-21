@@ -30,7 +30,7 @@ node {
         }
      }
     stage('deploy'){
-        sh 'docker run -p 5550:5000 manishaverma/javaimg:latest'
+        sh 'docker run -p 5300:5000 manishaverma/javaimg:latest'
     }
 
 
