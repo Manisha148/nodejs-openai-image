@@ -26,5 +26,9 @@ node {
             app.push("${env.BUILD_NUMBER}")
         }
      }
+    stage('deploy'){
+        sh 'docker run -p 4000:5000 manishaverma/javaimg:latest'
+    }
+
 
 }
