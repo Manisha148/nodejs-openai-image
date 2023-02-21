@@ -1,9 +1,9 @@
-import api from 'api.js'
+
 const { Configuration, OpenAIApi } = require('openai');
 
 const configuration = new Configuration({
 //    organization: "org-hSy5yZFXNFqHYh6YVzW2SK4h",
-  apiKey: api.chatGptKey ,
+  apiKey: process.env.OPENAI_API_KEY ,
 });
 const openai = new OpenAIApi(configuration);
 
