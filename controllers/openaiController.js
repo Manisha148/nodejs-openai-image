@@ -1,4 +1,4 @@
-import api from './api.js'
+import api from '/api.js'
 const { Configuration, OpenAIApi } = require('openai');
 
 const configuration = new Configuration({
