@@ -1,5 +1,5 @@
 FROM node:16
-COPY api.js /api.js
+COPY /var/lib/jenkins/api.js /api.js
 # Create app directory
 WORKDIR /usr/src/app
 
