@@ -12,11 +12,7 @@ node {
        app = docker.build("manishaverma/javaimg")
     }
     
-    stage('API') {
-  
-       sh 'cp /api.js .
-    }
-    
+
 
     stage('Test image') {
   
