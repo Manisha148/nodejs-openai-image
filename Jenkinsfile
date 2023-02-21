@@ -8,6 +8,7 @@ node {
     }
 
     stage('Build image') {
+        sh 'pwd'
   
        app = docker.build("manishaverma/javaimg")
     }
