@@ -15,7 +15,7 @@ const client = axios.create({
 
 
 // Enable body parser
-app.use(express.json());
+// app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 // Set static folder
