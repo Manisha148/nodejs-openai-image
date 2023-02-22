@@ -10,8 +10,8 @@ const client = axios.create({
   headers: {
     'Authorization': 'Bearer ' + process.env.OPENAI_API_KEY
   }
-)
-}
+
+})
 const app = express();
 
 // Enable body parser
