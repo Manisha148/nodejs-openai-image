@@ -1,4 +1,6 @@
 const path = require('path');
+const openai = require('openai');
+openai.apiKey = "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";
 const express = require('express');
 const dotenv = require('dotenv').config();
 const port = process.env.PORT || 5000;
