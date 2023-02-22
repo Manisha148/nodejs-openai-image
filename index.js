@@ -4,8 +4,15 @@ const path = require('path');
 const express = require('express');
 const dotenv = require('dotenv').config();
 const port = process.env.PORT || 5000;
+const axios = require('axios');
 
+const client = axios.create({
+  headers: {
+    'Authorization': 'Bearer ' + process.env.OPENAI_API_KEY
+  }
 const app = express();
+});
+
 
 // Enable body parser
 app.use(express.json());
