@@ -1,4 +1,5 @@
 const path = require('path');
+const apiKey = process.env.OPENAI_API_KEY;
 const express = require('express');
 const dotenv = require('dotenv').config();
 const port = process.env.PORT || 5000;
