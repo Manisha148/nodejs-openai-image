@@ -10,12 +10,12 @@ const client = axios.create({
   headers: {
     'Authorization': 'Bearer ' + process.env.OPENAI_API_KEY
   }
-// const app = express();
-});
 
+}
+const app = express();
 
 // Enable body parser
-// app.use(express.json());
+app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 // Set static folder
