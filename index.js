@@ -12,7 +12,19 @@ const client = axios.create({
   }
 
 })
+const params = {
+  "prompt": "Once upon a time",
+  "max_tokens": 10
+}
+
+client.post('https://api.openai.com/v1/engines/davinci/completions', params)
+  .then(result => {
+    console.log(result.data);
+  }).catch(err => {
+    console.log(err);
+})
 const app = express();
+
 
 // Enable body parser
 app.use(express.json());
