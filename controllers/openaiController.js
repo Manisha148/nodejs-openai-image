@@ -1,5 +1,5 @@
 const { Configuration, OpenAIApi } = require('openai');
-os.environ["OPENAI_API_KEY"] = "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"
+// os.environ["OPENAI_API_KEY"] = "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"
 const configuration = new Configuration({
 //    organization: "org-hSy5yZFXNFqHYh6YVzW2SK4h",
 //   apiKey: process.env.OPENAI_API_KEY ,
