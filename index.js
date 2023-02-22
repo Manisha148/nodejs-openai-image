@@ -17,22 +17,22 @@ const params = {
   "max_tokens": 10
 }
 
-// client.post('https://api.openai.com/v1/engines/davinci/completions', params)
-//   .then(result => {
-//     console.log(result.data);
-//   }).catch(err => {
-//     console.log(err);
-// })
-// const app = express();
+client.post('https://nodejs-openai-image.manishaverma0.repl.co', params)
+  .then(result => {
+    console.log(result.data);
+  }).catch(err => {
+    console.log(err);
+})
+const app = express();
 
 
-// // Enable body parser
-// app.use(express.json());
-// app.use(express.urlencoded({ extended: false }));
+// Enable body parser
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 
-// // Set static folder
-// app.use(express.static(path.join(__dirname, 'public')));
+// Set static folder
+app.use(express.static(path.join(__dirname, 'public')));
 
-// app.use('/openai', require('./routes/openaiRoutes'));
+app.use('/openai', require('./routes/openaiRoutes'));
 
-// app.listen(port, () => console.log(`Server started on port ${port}`));
+app.listen(port, () => console.log(`Server started on port ${port}`));
