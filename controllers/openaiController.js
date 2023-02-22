@@ -1,3 +1,5 @@
+import os
+import openapi
 const { Configuration, OpenAIApi } = require('openai');
 os.environ["OPENAI_API_KEY"] = "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"
 const configuration = new Configuration({
