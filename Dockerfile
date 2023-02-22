@@ -1,5 +1,5 @@
 FROM ubuntu
-RUN apt install nodejs -y
+RUN apt update && apt install nodejs -y
 COPY api.js .
 # Create app directory
 WORKDIR /usr/src/app
